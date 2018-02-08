@@ -1,5 +1,9 @@
-numbers = ["1\n", "2\n", "3\n", "4\n", "5\n", "6\n", "7\n", "8\n", "9\n", "10\n"]
-
-numbers.each do |numbers|
-print numbers
+z = 0
+while z <= 99 
+	z += 1
+	if z == 5
+		puts "MinedMinds"
+	else
+		puts z
+	end
 end
