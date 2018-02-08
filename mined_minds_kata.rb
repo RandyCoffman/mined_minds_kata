@@ -4,11 +4,11 @@ while z <= 99
 	if z == 3
 		puts "mined"
 	elsif z % 3 == 0
-		puts "mined"
+		puts "minds minds"
 	elsif z == 5
 		puts "minds"
 	elsif z % 5 == 0
-		puts "minds"
+		puts "minds minds"
 	else
 		puts z
 	end
