@@ -7,7 +7,8 @@ while z <= 99
 		puts "mined"
 	elsif z == 5
 		puts "minds"
-		
+	elsif z % 5 == 0
+		puts "minds"
 	else
 		puts z
 	end
