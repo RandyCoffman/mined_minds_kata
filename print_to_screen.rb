@@ -28,10 +28,19 @@
 
 
 
-z = 0
-100.times do |z|
-	z += 1
-	if z % 2 == 0
-		puts z
+# z = 0
+# 100.times do |z|
+# 	z += 1
+# 	if z % 2 == 0
+# 		puts z
+# 	end
+# end
+
+counter = 1
+	while counter <= 100 do
+	if counter.even? == true
+		puts counter
+	else 
 	end
-end
+counter += 1
+end	
