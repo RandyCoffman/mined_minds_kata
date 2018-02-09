@@ -2,13 +2,13 @@ z = 0
 while z <= 99 
 	z += 1
 	if z == 3
-		puts "mined"
+		puts "Mined"
 	elsif z % 3 == 0
-		puts "minds minds"
+		puts "MinedMinds"
 	elsif z == 5
-		puts "minds"
+		puts "Minds"
 	elsif z % 5 == 0
-		puts "minds minds"
+		puts "MinedMinds"
 	else
 		puts z
 	end
