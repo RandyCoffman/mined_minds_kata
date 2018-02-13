@@ -1,3 +1,7 @@
 for x in 1..100
-	puts x
+	if x == 3
+		puts "Mined"
+	else
+		puts x
+	end
 end
