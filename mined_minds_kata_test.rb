@@ -22,16 +22,52 @@ class Kata_test < Minitest::Test
 		assert_equal("minds", minedminds(5))
 	end
 
-	def test_divide_by3_0remainders
+	def test_divide3_by3_0remainders
 		assert_equal("mined", minedminds(3))
 	end
 
-	def test_divide_by5_0remainders
+	def test_divide6_by3_0remainders
+		assert_equal("mined", minedminds(6))
+	end
+
+	def test_divide9_by3_0remainders
+		assert_equal("mined", minedminds(9))
+	end
+
+	def test_divide12_by3_0remainders
+		assert_equal("mined", minedminds(12))
+	end
+
+	def test_divide5_by5_0remainders
 		assert_equal("minds", minedminds(5))
 	end
 
-	def test_divide_by3and5_0remainders
+	def test_divide10_by5_0remainders
+		assert_equal("minds", minedminds(10))
+	end
+
+	def test_divide25_by5_0remainders
+		assert_equal("minds", minedminds(25))
+	end
+
+	def test_divide50_by5_0remainders
+		assert_equal("minds", minedminds(50))
+	end
+
+	def test_divide15_by3and5_0remainders
 		assert_equal("minedminds", minedminds(15))
+	end
+
+	def test_divide30_by3and5_0remainders
+		assert_equal("minedminds", minedminds(30))
+	end
+
+	def test_divide45_by3and5_0remainders
+		assert_equal("minedminds", minedminds(45))
+	end
+
+	def test_divide60_by3and5_0remainders
+		assert_equal("minedminds", minedminds(60))
 	end
 
 end
