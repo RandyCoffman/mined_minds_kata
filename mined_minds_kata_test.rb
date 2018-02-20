@@ -21,4 +21,9 @@ class Kata_test < Minitest::Test
 	def test_5_is_minds
 		assert_equal("minds", minedminds(5))
 	end
+
+	def test_divide_by3_0remainders
+		assert_equal("mined", minedminds(3))
+	end
+
 end
