@@ -17,4 +17,8 @@ class Kata_test < Minitest::Test
 	def test_3_is_mined
 		assert_equal("mined", minedminds(3))
 	end
+
+	def test_5_is_minds
+		assert_equal("minds", minedminds(5))
+	end
 end
