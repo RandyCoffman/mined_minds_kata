@@ -3,7 +3,7 @@ def number_array
 	number.map!{|x|
 		if x % 3 == 0
 			x = "mined"
-		elsif x == 5
+		elsif x % 5 == 0
 			x = "minds"
 		else
 			x = x
