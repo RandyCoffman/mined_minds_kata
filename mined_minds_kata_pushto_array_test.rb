@@ -26,4 +26,8 @@ class Kata_array_test < Minitest::Test
 		assert_equal(42, minedminds[41])
 	end
 
+	def test_3equals_string_mined
+		assert_equal("mined", minedminds[2])
+	end
+
 end
