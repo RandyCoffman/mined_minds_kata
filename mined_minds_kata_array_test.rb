@@ -29,9 +29,20 @@ class Kata_array_test < Minitest::Test
 	def test_3equals_mined
 		assert_equal("mined", number_array[2])
 	end
-	
+
 	def test_5equals_minds
 		assert_equal("minds", number_array[4])
 	end
 
+	def test_9equals_mined
+		assert_equal("mined", number_array[8])
+	end
+
+	def test_12equals_mined
+		assert_equal("mined", number_array[11])
+	end
+
+	def test_18equals_mined
+		assert_equal("mined", number_array[17])
+	end
 end
