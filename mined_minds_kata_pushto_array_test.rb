@@ -10,5 +10,20 @@ class Kata_array_test < Minitest::Test
 		assert_equal(Array, minedminds.class)
 	end
 
+	def test_array_goes_to100
+		assert_equal(100, minedminds.length)
+	end
+
+	def test_index0_return1
+		assert_equal(1, minedminds[0])
+	end
+
+	def test_index31_return32
+		assert_equal(32, minedminds[31])
+	end
+
+	def test_index41_return42
+		assert_equal(42, minedminds[41])
+	end
 
 end
