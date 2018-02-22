@@ -26,4 +26,9 @@ class Kata_array_test < Minitest::Test
 		assert_equal(true, number_array.include?(14))
 	end
 
+	def test_3equals_mined
+		assert_equal("mined", number_array[2])
+	end
+
+
 end
