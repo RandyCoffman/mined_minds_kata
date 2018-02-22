@@ -57,4 +57,20 @@ class Kata_array_test < Minitest::Test
 	def test_25equals_minds
 		assert_equal("minds", number_array[24])
 	end
+
+	def test_15equals_minedminds
+		assert_equal("minedminds", number_array[14])
+	end
+
+	def test_30equals_minedminds
+		assert_equal("minedminds", number_array[29])
+	end
+
+	def test_45equals_minedminds
+		assert_equal("minedminds", number_array[44])
+	end
+
+	def test_60equals_minedminds
+		assert_equal("minedminds", number_array[59])
+	end
 end
