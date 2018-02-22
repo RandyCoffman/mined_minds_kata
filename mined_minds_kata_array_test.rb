@@ -18,8 +18,8 @@ class Kata_array_test < Minitest::Test
 		assert_equal(true, number_array.include?(49))
 	end
 
-	def test_array_include100
-		assert_equal(true, number_array.include?(100))
+	def test_array_include98
+		assert_equal(true, number_array.include?(98))
 	end
 
 	def test_array_include14
@@ -44,5 +44,17 @@ class Kata_array_test < Minitest::Test
 
 	def test_18equals_mined
 		assert_equal("mined", number_array[17])
+	end
+
+	def test_10equals_minds
+		assert_equal("minds", number_array[9])
+	end
+
+	def test_20equals_minds
+		assert_equal("minds", number_array[19])
+	end
+
+	def test_25equals_minds
+		assert_equal("minds", number_array[24])
 	end
 end
