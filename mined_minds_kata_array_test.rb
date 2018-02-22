@@ -9,5 +9,9 @@ class Kata_array_test < Minitest::Test
 	def test_array_made?
 		assert_equal(Array, number_array.class)
 	end
+
+	def test_array_range1_100
+		assert_equal([1..100], number_array)
+	end
 	
 end
