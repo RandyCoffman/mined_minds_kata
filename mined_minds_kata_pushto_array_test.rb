@@ -45,4 +45,16 @@ class Kata_array_test < Minitest::Test
 	def test_10div5_0r_string_mined
 		assert_equal("minds", minedminds[9])
 	end
+
+	def test_15div5_0r_string_mined
+		assert_equal("minedminds", minedminds[14])
+	end
+
+	def test_30div5_0r_string_mined
+		assert_equal("minedminds", minedminds[29])
+	end
+
+	def test_45div5_0r_string_mined
+		assert_equal("minedminds", minedminds[44])
+	end
 end
