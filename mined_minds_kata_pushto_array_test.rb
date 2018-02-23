@@ -22,16 +22,20 @@ class Kata_array_test < Minitest::Test
 		assert_equal(32, minedminds[31])
 	end
 
-	def test_index41_return42
-		assert_equal(42, minedminds[41])
+	def test_index42_return43
+		assert_equal(43, minedminds[42])
 	end
 
 	def test_3equals_string_mined
 		assert_equal("mined", minedminds[2])
 	end
 
-	# def test_6div_0r_string_mined
-	# 	assert_equal("mined", minedminds[5])
-	# end
+	def test_6div3_0r_string_mined
+		assert_equal("mined", minedminds[5])
+	end
+
+	def test_9div3_0r_string_mined
+		assert_equal("mined", minedminds[8])
+	end
 
 end
