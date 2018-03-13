@@ -7,7 +7,17 @@ class Coin_changer < Minitest::Test
 	end
 
 	def test_class_hash
-		coin = coin_changer
+		coin = coin_changer(50)
 		assert_equal(Hash, coin.class)
+	end
+
+	def test_one_penny
+		coin = coin_changer(1)
+		assert_equal({"penny" => 1}, coin)
+	end
+
+	def test_one_time
+		coin = coin_changer(1)
+		assert_equal({"penny" => 1}, coin)
 	end
 end
