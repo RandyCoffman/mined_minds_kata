@@ -8,6 +8,6 @@ class Coin_changer < Minitest::Test
 
 	def test_class_hash
 		coin = coin_changer
-		assert_equal(Hash, coin)
+		assert_equal(Hash, coin.class)
 	end
 end
