@@ -1,3 +1,4 @@
-def coin_changer
-	{}
+def coin_changer(cents)
+	coins = {"penny" => 1}
+	coins
 end
