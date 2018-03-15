@@ -1,19 +1,30 @@
 def coin_changer(cents)
 	coins = {}
-	if cents >= 25
-		coins ["quarter"] = cents / 25
-		cents = cents % 25
+	sort_coins= {"quarter" => 25, "dime" => 10, "nickel" => 5, "penny" => 1}
+	sort_coins.each { |key, value|
+		if cents >= value
+			coins[key] = cents / value
+		end
+		cents = cents % value
+	}
+	coin_to_coins(coins)
+end
+
+
+def coin_to_coins(coins)
+myhash = {}
+	coins.each_pair do |key, value|
+		key = key.to_s
+		if value != 1 && key == "penny"
+			key = "pennies"
+			key
+		elsif value != 1
+			key = key.to_s + "s"
+			key
+		else
+			key
+		end
+		myhash[key] = value
 	end
-	if cents >= 10
-		coins ["dime"] = cents / 10
-		cents = cents % 10
-	end
-	if cents >= 5
-		coins ["nickel"] = cents / 5
-		cents = cents % 5
-	end
-	if cents >= 1
-		coins["penny"] = cents
-	end
-	coins
+	myhash
 end
