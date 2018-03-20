@@ -12,19 +12,19 @@ end
 
 
 def coin_to_coins(coins)
-myhash = {}
+mystring = ""
 	coins.each_pair do |key, value|
 		key = key.to_s
 		if value != 1 && key == "penny"
 			key = "pennies"
-			key
+			key.to_s
 		elsif value != 1
 			key = key.to_s + "s"
-			key
+			key.to_s
 		else
-			key
+			key.to_s
 		end
-		myhash[key] = value
+		mystring << "#{value} #{key}, "
 	end
-	myhash
+	mystring.chop!.chop!
 end
